@@ -61,12 +61,6 @@
       "id": "hlQAqAD"
     },
     {
-      "name": "Georg Trnka",
-      "kindergardenId": 2,
-      "birthDate": "2020-11-23",
-      "id": "VS7ELg3"
-    },
-    {
       "name": "Andi S",
       "kindergardenId": 1,
       "birthDate": "2022-04-23",
@@ -77,6 +71,18 @@
       "kindergardenId": 3,
       "birthDate": "1979-12-13",
       "id": "gJKMVcE"
+    },
+    {
+      "name": "Georg Trnka",
+      "kindergardenId": 1,
+      "birthDate": "1979-04-26",
+      "id": "xByrK3N"
+    },
+    {
+      "name": "Mini Max",
+      "kindergardenId": 1,
+      "birthDate": "2012-12-30",
+      "id": "JAeA9SF"
     }
   ],
   "kindergardens": [

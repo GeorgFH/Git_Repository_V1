@@ -16,6 +16,7 @@ import { PageEvent } from '@angular/material/paginator';
 export class DataComponent implements OnInit {
 
   constructor(public storeService: StoreService, private backendService: BackendService) {}
+  
   @Input() currentPage!: number;
   @Output() selectPageEvent = new EventEmitter<number>();
   public page: number = 0;
@@ -57,8 +58,9 @@ export class DataComponent implements OnInit {
   pageChanged(event: PageEvent) {
     let currentPage = event.pageIndex + 1; // Paginator-Index beginnt bei 0, deshalb +1
     this.selectPageEvent.emit(currentPage);
-    this.backendService.getChildren(this.currentPage);
+    this.backendService.getChildren(currentPage);
   }
+
 }
 
 

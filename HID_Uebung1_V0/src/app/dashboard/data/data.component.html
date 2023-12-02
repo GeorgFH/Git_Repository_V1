@@ -34,13 +34,14 @@
     <tr mat-header-row *matHeaderRowDef="['name', 'kindergarden', 'address', 'age', 'birthDate', 'actions']"></tr>
     <tr mat-row *matRowDef="let row; columns: ['name', 'kindergarden', 'address', 'age', 'birthDate', 'actions']"></tr>
 
-</table>
+  </table>
   
-<mat-paginator class="c_matPaginator" [length]="returnAllChildren()" [pageSize]="childrenPerPage" (page)="pageChanged($event)" aria-label="Select page"></mat-paginator>
+  <mat-paginator class="c_matPaginator" [length]="returnAllChildren()" [pageSize]="childrenPerPage" (page)="pageChanged($event)" aria-label="Select page"></mat-paginator>
 
-<div class="example-button-row">
+
+  <!-- <div class="example-button-row">
     <button mat-stroked-button [ngClass]="page === currentPage ? 'active' : ''" (click)="selectPage(page)" type="button" *ngFor="let page of returnAllPages() | pagination ">{{page}}</button>
-</div>
+</div> -->
 
 
 <!-- <table>
